@@ -22,7 +22,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public TilesConfigurer tilesConfigurer() {
 		TilesConfigurer tconf = new TilesConfigurer();
-		tconf.setDefinitions(new String[] { "/WEB-INF/tiles/tiles.xml" });
+		tconf.setDefinitions(new String[] { "/WEB-INF/tiles/*.xml" });
 		return tconf;
 	}
 
