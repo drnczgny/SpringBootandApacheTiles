@@ -4,26 +4,16 @@
 
 <tiles-definitions>
 	<!-- Templates -->
-	<definition id="baseLayout" name="baseLayout" template="/WEB-INF/jsp/layout/base-layout.jsp">
+	<definition id="baseLayout" name="baseLayout" template="/WEB-INF/jsp/layout/template-layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/jsp/layout/header.jsp" />
-		<put-attribute name="body" value="" />
+		<put-attribute name="left-sidebar" value="/WEB-INF/jsp/layout/left-sidebar.jsp" />
+		<put-attribute name="base-body-title" value="Body Title" />
+		<put-attribute name="base-body" value="" />	
 		<put-attribute name="footer" value="/WEB-INF/jsp/layout/footer.jsp" />
 		<put-list-attribute name="stylesheets">
 			<add-attribute value="/resources/static/css/style.css" />
 			<add-attribute value="/resources/static/css/bootstrap.css" />
 		</put-list-attribute>
-	</definition>
-
-	<definition id="welcome" name="welcome" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/jsp/view/welcome.jsp" />
-	</definition>
-	
-	<definition id="pageOne" name="pageOne" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/jsp/view/pageone.jsp" />
-	</definition>
-	
-	<definition id="pageTwo" name="pageTwo" extends="baseLayout">
-		<put-attribute name="body" value="/WEB-INF/jsp/view/pagetwo.jsp" />
 	</definition>
 
 </tiles-definitions>

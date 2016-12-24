@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition id="welcome" name="welcome" extends="baseLayout">
+		<put-attribute name="base-body" value="/WEB-INF/jsp/view/welcome.jsp" />
+	</definition>
+	
+</tiles-definitions>

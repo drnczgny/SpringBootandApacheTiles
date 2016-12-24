@@ -19,7 +19,21 @@
 </head>
 <body>
 	<tiles:insertAttribute name="header" />
-	<tiles:insertAttribute name="body" />
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<tiles:insertAttribute name="left-sidebar" />
+			</div>
+			<div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 main">
+				<h3>
+					<tiles:getAsString name="base-body-title" />
+				</h3>
+				<tiles:insertAttribute name="base-body" />
+			</div>
+		</div>
+	</div>
+
 	<tiles:insertAttribute name="footer" />
 </body>
 </html>
